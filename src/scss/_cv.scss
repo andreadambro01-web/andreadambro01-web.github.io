@@ -1,0 +1,17 @@
+.cv {
+  h1, h2 {
+    font-family: $font-family;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+  }
+
+  .badge {
+    background-color: $primary-color;
+    color: white;
+  }
+}

@@ -1,0 +1,21 @@
+.contact {
+  h1 {
+    font-family: $font-family;
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    .form-label {
+      font-weight: 600;
+    }
+
+    .form-control {
+      border-radius: $border-radius;
+    }
+
+    button {
+      font-weight: 700;
+    }
+  }
+}

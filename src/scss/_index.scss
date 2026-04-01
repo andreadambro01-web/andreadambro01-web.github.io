@@ -1,0 +1,51 @@
+/* Hero */
+.hero {
+  background-color: $primary-color;
+  color: white;
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Bio */
+.bio {
+  background-color: $light-color;
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Skills / Competenze */
+.skills {
+  .badge {
+    background-color: $light-color;
+    color: $primary-color;
+    font-size: 0.9rem;
+  }
+}
+
+/* Portfolio */
+.portfolio {
+  .card {
+    border-radius: $border-radius;
+    img {
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+}
+
+/* Social */
+.social {
+  a.btn {
+    font-weight: 600;
+  }
+}
