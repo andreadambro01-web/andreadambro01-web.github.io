@@ -1,0 +1,5 @@
+@use '../abstracts/mixins' as m;
+
+.btn-custom {
+  @include m.btn-primary;
+}

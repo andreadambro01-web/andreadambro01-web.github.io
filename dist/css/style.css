@@ -1,0 +1,198 @@
+body {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+  text-align: left;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #212529;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+header .navbar {
+  background-color: #0d6efd;
+}
+header .navbar-brand {
+  color: #ffffff;
+  font-weight: 700;
+}
+header .navbar-brand:hover {
+  color: #ffffff;
+}
+header .nav-link {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+header .nav-link:hover {
+  color: #f8f9fa;
+}
+
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
+footer p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.btn-custom {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-custom:hover {
+  opacity: 0.85;
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid rgb(182.972972973, 190, 197.027027027);
+  overflow: hidden;
+}
+
+input,
+textarea {
+  border: 1px solid rgb(182.972972973, 190, 197.027027027);
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.hero-text {
+  text-align: left;
+}
+.hero-text .btn {
+  display: inline-block;
+  margin-left: 0;
+}
+
+.about {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.skills {
+  background-color: #f0f0f0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.skills .badge {
+  font-size: 0.9rem;
+  margin: 0.2rem;
+}
+
+.portfolio {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.cv {
+  padding: 2rem 1rem;
+}
+.cv h2 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.cv .cv-item {
+  margin-bottom: 2rem;
+}
+.cv .cv-item .cv-date {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0d6efd;
+}
+.contact input,
+.contact textarea {
+  border: 1px solid rgb(182.972972973, 190, 197.027027027);
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+.contact textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+.contact button {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact button:hover {
+  opacity: 0.85;
+}
+.contact button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */

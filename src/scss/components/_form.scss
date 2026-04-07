@@ -1,0 +1,22 @@
+@use 'sass:color';
+@use '../abstracts/variables' as v;
+
+input,
+textarea {
+  border: 1px solid color.adjust(v.$dark-color, $lightness: 60%);
+  border-radius: v.$border-radius;
+  padding: v.$spacing-sm;
+  width: 100%;
+  margin-bottom: v.$spacing-md;
+
+  &:focus {
+    outline: none;
+    border-color: v.$primary-color;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+

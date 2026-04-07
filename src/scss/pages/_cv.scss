@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+.cv {
+  padding: v.$spacing-lg v.$spacing-md;
+
+  h2 {
+    margin-top: v.$spacing-lg;
+    border-bottom: 2px solid v.$primary-color;
+    padding-bottom: v.$spacing-sm;
+    text-align: center;
+  }
+
+  .cv-item {
+    margin-bottom: v.$spacing-lg;
+
+    .cv-date {
+      font-size: 0.85rem;
+      color: v.$secondary-color;
+    }
+  }
+}

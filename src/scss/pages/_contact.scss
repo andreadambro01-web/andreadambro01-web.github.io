@@ -1,0 +1,41 @@
+@use 'sass:color';
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: v.$spacing-lg v.$spacing-md;
+
+  h2 {
+    text-align: center;
+    margin-bottom: v.$spacing-lg;
+    color: v.$primary-color;
+  }
+
+  input,
+  textarea {
+    border: 1px solid color.adjust(v.$dark-color, $lightness: 60%);
+    border-radius: v.$border-radius;
+    padding: v.$spacing-sm;
+    width: 100%;
+    margin-bottom: v.$spacing-md;
+
+    &:focus {
+      outline: none;
+      border-color: v.$primary-color;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 130px;
+  }
+
+  button {
+    @include m.btn-primary;
+    display: block;
+    width: 100%;
+    margin-top: v.$spacing-md;
+  }
+}

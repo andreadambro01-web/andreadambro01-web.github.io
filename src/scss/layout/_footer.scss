@@ -1,0 +1,15 @@
+@use '../abstracts/variables' as v;
+
+footer {
+  background-color: v.$dark-color;
+  color: v.$light-color;
+  text-align: center;
+  padding: v.$spacing-lg v.$spacing-md;
+  margin-top: v.$spacing-lg;
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+}

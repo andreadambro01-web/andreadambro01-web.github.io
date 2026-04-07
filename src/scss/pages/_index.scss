@@ -1,0 +1,31 @@
+@use '../abstracts/variables' as v;
+
+.hero-text {
+  text-align: left;
+
+  .btn {
+    display: inline-block; 
+    margin-left: 0;         
+  }
+}
+
+.about {
+  padding: v.$spacing-lg v.$spacing-md;
+  text-align: center;
+}
+
+.skills {
+  background-color: #f0f0f0;
+  padding: v.$spacing-lg v.$spacing-md;
+  text-align: center; 
+
+  .badge {
+    font-size: 0.9rem;
+    margin: 0.2rem;
+  }
+}
+
+.portfolio {
+  padding: v.$spacing-lg v.$spacing-md;
+  text-align: center;
+}

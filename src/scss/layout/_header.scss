@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+header {
+  .navbar {
+    background-color: v.$primary-color; // blu scuro
+  }
+
+  .navbar-brand {
+    color: v.$light-color; // bianco
+    font-weight: 700;
+
+    &:hover {
+      color: v.$light-color; // resta bianco quando hover
+    }
+  }
+
+  .nav-link {
+    color: v.$light-color; // bianco per leggibilità
+    @include m.transition;
+
+    &:hover {
+      color: v.$bg-color; // diventa chiaro (tipo bianco/grigio chiaro)
+    }
+  }
+}
