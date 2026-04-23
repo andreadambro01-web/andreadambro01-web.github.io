@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as v;
+
+.cv-section {
+  margin-bottom: v.$spacing-lg;
+}
+
+.cv-section h2 {
+  border-bottom: 3px solid v.$primary-color;
+  padding-bottom: v.$spacing-sm;
+  margin-bottom: v.$spacing-md;
+  color: v.$dark-color;
+}
+
+.cv-section ul {
+  padding-left: 1.2rem;
+}
+
+.cv-section li {
+  margin-bottom: v.$spacing-sm;
+}

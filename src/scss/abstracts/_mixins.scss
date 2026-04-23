@@ -1,0 +1,15 @@
+@use './variables' as v;
+
+@mixin btn-primary {
+  background-color: v.$primary-color;
+  color: #fff;
+  border: none;
+  padding: v.$spacing-sm v.$spacing-md;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
