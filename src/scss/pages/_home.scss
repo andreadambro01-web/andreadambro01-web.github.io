@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as v;
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: v.$spacing-md;
+}
+
+.skill-badge {
+  background-color: v.$light-color;
+  color: v.$primary-color;
+  padding: 0.75rem 1rem;
+  border-radius: v.$border-radius;
+  text-align: center;
+  font-weight: 500;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background-color: v.$primary-color;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.social {
+  background-color: v.$dark-color;
+  padding: v.$spacing-lg 1rem;
+  text-align: center;
+}
+
+.social h2 {
+  margin-bottom: v.$spacing-md;
+}
+
+.social a {
+  margin: 0 0.5rem;
+}

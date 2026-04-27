@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as v;
+
+.hero {
+  background: linear-gradient(135deg, v.$primary-color, v.$dark-color);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.hero__image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.hero__text {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}

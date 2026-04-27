@@ -1,0 +1,46 @@
+.contact {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0d6efd;
+}
+.contact input,
+.contact textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+.contact textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+.contact button {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact button:hover {
+  opacity: 0.85;
+}
+.contact button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=contact.css.map */

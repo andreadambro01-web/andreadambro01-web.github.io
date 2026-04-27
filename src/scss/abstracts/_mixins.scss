@@ -1,0 +1,16 @@
+@use './variables' as v;
+
+@mixin button-primary {
+  background-color: v.$primary-color;
+  color: #fff;
+  border: none;
+  padding: v.$spacing-sm v.$spacing-md;
+  border-radius: v.$border-radius;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

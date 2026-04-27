@@ -1,0 +1,14 @@
+@use '../abstracts/variables' as v;
+
+.navbar {
+  background-color: v.$dark-color;
+  padding: 1rem 0;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}

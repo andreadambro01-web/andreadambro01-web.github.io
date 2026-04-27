@@ -1,0 +1,13 @@
+@use './variables' as v;
+
+@function space($size) {
+  $map: (
+    xs: v.$spacing-xs,
+    sm: v.$spacing-sm,
+    md: v.$spacing-md,
+    lg: v.$spacing-lg,
+    xl: v.$spacing-xl
+  );
+
+  @return map-get($map, $size);
+}

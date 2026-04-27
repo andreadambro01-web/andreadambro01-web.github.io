@@ -1,0 +1,11 @@
+@use '../abstracts/variables' as v;
+
+body {
+  background-color: v.$light-color;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

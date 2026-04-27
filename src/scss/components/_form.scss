@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: v.$border-radius;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: v.$primary-color;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
