@@ -1,0 +1,15 @@
+@use '../abstracts/functions' as f;
+@use '../abstracts/variables' as v;
+
+.skills-grid {
+  display: grid;
+  gap: f.space(md);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.skill-badge {
+  background: rgba(31, 58, 95, 0.08);
+  padding: v.$spacing-sm v.$spacing-md;
+  border-radius: v.$border-radius;
+  text-align: center;
+}

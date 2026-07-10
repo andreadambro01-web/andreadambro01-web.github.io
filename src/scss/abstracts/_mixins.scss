@@ -1,0 +1,17 @@
+@use "sass:color";
+@use '../abstracts/variables' as v;
+
+@mixin button-primary {
+  background: v.$primary-color;
+  color: #fff;
+  border: none;
+  padding: v.$spacing-sm v.$spacing-md;
+  border-radius: v.$border-radius;
+  font-weight: 600;
+  transition: all v.$transition-base;
+  cursor: pointer;
+
+  &:hover {
+    background: color.adjust(v.$primary-color, $lightness: -8%);
+  }
+}

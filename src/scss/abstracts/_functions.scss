@@ -1,0 +1,14 @@
+@use "sass:map";
+@use './variables' as v;
+
+$spaces: (
+  xs: v.$spacing-xs,
+  sm: v.$spacing-sm,
+  md: v.$spacing-md,
+  lg: v.$spacing-lg,
+  xl: v.$spacing-xl
+);
+
+@function space($size) {
+  @return map.get($spaces, $size);
+}

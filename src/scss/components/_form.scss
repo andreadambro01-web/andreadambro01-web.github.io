@@ -1,0 +1,37 @@
+@use '../abstracts/variables' as v;
+
+.contact-form {
+  width: 100%;
+  max-width: 850px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: v.$border-radius;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: v.$accent-color;
+  outline: none;
+}
+
+.btn-dark-custom {
+  background: v.$dark-color;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: v.$border-radius;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-dark-custom:hover {
+  background: #444;
+  transform: translateY(-2px);
+}

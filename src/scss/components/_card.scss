@@ -1,0 +1,35 @@
+@use '../abstracts/variables' as v;
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$spacing-lg;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.portfolio__card {
+  width: 100%;
+  border-radius: v.$border-radius;
+  overflow: hidden;
+  background: rgba(31, 58, 95, 0.05);
+  border: 1px solid rgba(31, 58, 95, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio__card .card-body {
+  padding: 1.5rem;
+}
+
+.portfolio__card .card-title {
+  margin-top: 1.5rem;
+}

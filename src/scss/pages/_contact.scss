@@ -1,0 +1,20 @@
+@use '../abstracts/functions' as f;
+
+.contact-page {
+  padding-top: f.space(xl);
+}
+
+.contact-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-page h1 {
+  margin-top: f.space(sm);
+}
+
+.contact-page p {
+  max-width: 700px;
+  margin-bottom: f.space(sm);
+}

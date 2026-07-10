@@ -1,0 +1,33 @@
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__image {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.about {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.skills {
+  background-color: #f0f0f0;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.skills .badge {
+  font-size: 0.9rem;
+  margin: 0.2rem;
+}
+
+.portfolio {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */

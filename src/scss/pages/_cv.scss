@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/functions' as f;
+
+.cv-section {
+  margin-bottom: v.$spacing-lg;
+}
+
+.cv-section h2 {
+  border-bottom: 3px solid v.$primary-color;
+  padding-bottom: v.$spacing-sm;
+  margin-bottom: v.$spacing-md;
+}
+
+.cv-section ul {
+  padding-left: 1.2rem;
+}

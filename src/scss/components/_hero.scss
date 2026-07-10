@@ -1,0 +1,53 @@
+@use '../abstracts/functions' as f;
+@use '../abstracts/variables' as v;
+
+.hero {
+  background: linear-gradient(135deg, v.$primary-color, v.$dark-color);
+  color: #fff;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: f.space(xl);
+}
+
+.hero__container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero__text {
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero__text p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+}

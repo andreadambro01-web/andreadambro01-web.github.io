@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+
+h1, h2, h3, h4 {
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: v.$font-family-base;
+}
+
+p {
+  color: v.$dark-color;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,418 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #1c1c1c;
+  background: #f8f9fa;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a,
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #ff6b6b;
+  outline-offset: 2px;
+}
+
+h1, h2, h3 {
+  scroll-margin-top: 90px;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.5;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  color: #1c1c1c;
+  line-height: 1.6;
+}
+
+h2 {
+  margin-bottom: 2rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: #1c1c1c;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ff6b6b;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #ff6b6b;
+}
+
+.nav-link.active {
+  font-weight: 700;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #1c1c1c;
+    flex-direction: column;
+    display: none;
+    padding: 1.5rem 0;
+    align-items: center;
+    gap: 1rem;
+  }
+  .menu-toggle:checked ~ .navbar-menu {
+    display: flex;
+  }
+  .menu-toggle:checked + .burger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle:checked + .burger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle:checked + .burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+.section {
+  padding: 5rem 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer {
+  background: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.button {
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+}
+
+.button--primary {
+  background: #1f3a5f;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.button--primary:hover {
+  background: rgb(20.9619047619, 39.219047619, 64.2380952381);
+}
+
+.button--primary-light {
+  background: transparent;
+  color: #1c1c1c;
+  border: 2px solid #1c1c1c;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.button--primary-light:hover {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.btn-dark-custom {
+  background: #1c1c1c;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.portfolio__card {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(31, 58, 95, 0.05);
+  border: 1px solid rgba(31, 58, 95, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio__card .card-body {
+  padding: 1.5rem;
+}
+
+.portfolio__card .card-title {
+  margin-top: 1.5rem;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 850px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.btn-dark-custom {
+  background: #1c1c1c;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-dark-custom:hover {
+  background: #444;
+  transform: translateY(-2px);
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f3a5f, #1c1c1c);
+  color: #fff;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 5rem;
+}
+
+.hero__container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero__image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.hero__text {
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero__text p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero__content {
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+.skills-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.skill-badge {
+  background: rgba(31, 58, 95, 0.08);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cv-section {
+  margin-bottom: 3rem;
+}
+
+.cv-section h2 {
+  border-bottom: 3px solid #1f3a5f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cv-section ul {
+  padding-left: 1.2rem;
+}
+
+.contact-page {
+  padding-top: 5rem;
+}
+
+.contact-page .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-page h1 {
+  margin-top: 0.5rem;
+}
+
+.contact-page p {
+  max-width: 700px;
+  margin-bottom: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mb-4 {
+  margin-bottom: 3rem;
+}
+
+.btn-gap {
+  margin-right: 0.5rem;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

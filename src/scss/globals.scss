@@ -1,0 +1,27 @@
+@use './abstracts/functions' as f;
+
+.text-left {
+  text-align: left;
+}
+
+.mb-4 {
+  margin-bottom: f.space(lg);
+}
+
+.btn-gap {
+  margin-right: f.space(sm);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
